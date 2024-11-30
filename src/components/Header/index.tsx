@@ -31,19 +31,19 @@ const Header = () => {
           <nav className="flex gap-4">
             <NavLink
               to="/"
-              className={({ isActive }) => `text-${isScrolled ? "blue" : "white"} ${isActive ? "font-bold text-blue" : ""} ${isScrolled ? "text-lg" : ""}`}
+              className={({ isActive }) => `text-${isScrolled ? "black" : "white"} ${isActive ? "font-bold text-blue" : ""} ${isScrolled ? "text-lg" : ""}`}
             >
               Home
             </NavLink>
             <NavLink
               to="/tarif"
-              className={({ isActive }) => `text-${isScrolled ? "blue" : "white"} ${isActive ? "font-bold text-blue" : ""} ${isScrolled ? "text-lg" : ""}`}
+              className={({ isActive }) => `text-${isScrolled ? "black" : "white"} ${isActive ? "font-bold text-blue" : ""} ${isScrolled ? "text-lg" : ""}`}
             >
               Tarifs
             </NavLink>
             <NavLink
               to="/demo"
-              className={({ isActive }) => `text-${isScrolled ? "blue" : "white"} ${isActive ? "font-bold text-blue" : ""} ${isScrolled ? "text-lg" : ""}`}
+              className={({ isActive }) => `text-${isScrolled ? "black" : "white"} ${isActive ? "font-bold text-blue" : ""} ${isScrolled ? "text-lg" : ""}`}
             >
               Demo
             </NavLink>
