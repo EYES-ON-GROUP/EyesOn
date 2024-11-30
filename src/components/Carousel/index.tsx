@@ -15,37 +15,37 @@ export default function TestimonialCarousel() {
     {
       id: 1,
       title: "Jean Dupont",
-      content: "otot",
+      content: "Eyes On m'a permis de protéger mes enfants tout en leur donnant une certaine autonomie en ligne. Une application indispensable !",
       backgroundColor: "bg-blue", // Blue
     },
     {
       id: 2,
       title: "Marie Curie",
-      content: "toto1",
+      content: "Enfin un outil facile à utiliser pour surveiller les activités numériques de mes enfants. Je me sens plus serein(e)",
       backgroundColor: "bg-black", // Green
     },
     {
       id: 3,
       title: "Albert Einstein",
-      content:"totot3",
+      content:"Grâce à Eyes On, j'ai pu fixer des limites de temps d'écran et m'assurer que mes enfants utilisent leur temps en ligne de manière constructive.",
       backgroundColor: "bg-[#1e4d91]", // Black
     },
     {
       id: 4,
       title: "John doe",
-      content: "totot3",
+      content: "Le rapport d'activité hebdomadaire est une fonctionnalité géniale pour comprendre les habitudes numériques de ma famille",
       backgroundColor: "bg-black", // Blue
     },
     {
       id: 5,
       title: "Michelle Curie",
-      content: "totot3",
+      content: "J'adore la possibilité de bloquer certains sites et d'autoriser uniquement les contenus adaptés à l'âge de mes enfants.",
       backgroundColor: "bg-blue", // Green
     },
     {
       id: 6,
       title: "Albert johnathan",
-      content:"totot3",
+      content:"Depuis que j'utilise Eyes On, mes enfants respectent mieux les règles du temps d'écran. C'est un vrai soulagement",
       backgroundColor: "bg-black", // Black
     },
     
