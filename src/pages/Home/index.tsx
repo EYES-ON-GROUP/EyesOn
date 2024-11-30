@@ -4,6 +4,7 @@ import Section1 from "../../components/Section1";
 import Section2 from "../../components/Section2";
 import Carousel from "../../components/Carousel";
 import GlobalSection from "../../components/GlobalSection";
+import LiveView from "../../components/LiveView";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Section1 />
         <Section2 />
       </GlobalSection>
+      <LiveView />
       <Carousel />
       {/* Other content can go here */}
     </main>
