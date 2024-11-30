@@ -10,13 +10,10 @@
     "@types/node": "^16.18.120",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-<<<<<<< HEAD
-    "lucide-react": "^0.462.0",
-=======
     "css-loader": "^7.1.2",
+    "lucide-react": "^0.462.0",
     "postcss": "^8.4.49",
     "postcss-loader": "^8.1.1",
->>>>>>> 671b46242b35295c1c4b3e43f12d43ae3bc8d9e1
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.0.1",

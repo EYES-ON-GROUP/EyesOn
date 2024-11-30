@@ -1,42 +1,53 @@
 import * as React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from 'react-i18next';
+import { t } from "i18next";
 import { useState, useEffect } from "react";
 
+
+
 export default function TestimonialCarousel() {
+  const { t } = useTranslation();
+
   const comments = [
     {
       id: 1,
       auteur: "Jean Dupont",
-      text: "carossel.temoins1",
+      text: t('carossel.temoins1')
+
     },
     {
       id: 2,
       auteur: "Marie Curie",
-      text: "carossel.temoins2",
+      text: t('carossel.temoins2'),
+    
     },
     {
       id: 3,
       auteur: "Albert Einstein",
-      text: "carossel.temoins3",
+      text:t('carossel.temoins3'),
+    
     },
     {
       id: 4,
-      auteur: "John Doe",
-      text: "carossel.temoins4",
+      auteur: "John doe",
+      text: t('carossel.temoins4'),
+      
     },
     {
       id: 5,
       auteur: "Michelle Curie",
-      text: "carossel.temoins5",
+      text: t('carossel.temoins5'),
       backgroundColor: "bg-[#2ea043]", // Green
     },
     {
       id: 6,
-      auteur: "Albert Jonathan",
-      text: "carossel.temoins6",
+      auteur: "Albert johnathan",
+      text: t('carossel.temoins6'),
+      
     },
+    
   ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCards, setVisibleCards] = useState(1);
   const [touchStart, setTouchStart] = useState<number | null>(null);
@@ -58,7 +69,7 @@ export default function TestimonialCarousel() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const colors = ["bg-[#F87501]", "bg-[#2AC100]", "bg-black"];
+  const colors = ["bg-[#134888]", "bg-[#2AC100]", "bg-black"];
   const textColors = ["text-white", "text-black", "text-white"];
 
   const handleNext = () => {
@@ -96,53 +107,69 @@ export default function TestimonialCarousel() {
 
   return (
     <div
-      className="px-4 lg:px-24 md:flex justify-center items-center gap-8 my-14"
+      className="px-5 lg:px-16 md:flex justify-center items-center gap-8"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
       <div
-        className="flex mb-4 flex-col items-center md:items-start 
-      justify-center md:w-80"
+        className="flex mb-4 flex-col items-start 
+      justify-center md:w-80 "
       >
         <h1
-          className="font-bold text-4xl 
-        md:text-left text-center mb-7"
+          className="font-bold text-blue-primary text-3xl
+        md:text-left text-center mb-2"
         >
-          Que disent les parents
+          {t("carossel.titreHero")}
         </h1>
-        <div className="flex gap-8">
+        <div className="flex  gap-8">
           {/* Boutons de navigation */}
           <button
             onClick={handlePrev}
             disabled={currentIndex === 0}
-            className={`flex items-center justify-center h-16 w-16 rounded-full shadow-md border ${
+            className={`left-0 top-1/2 hidden md:block h-16 w-16 rounded-full ${
               currentIndex === 0
-                ? " bg-[#E5E5E5] text-black" // Inactif
-                : "bg-blue text-white" // Actif
+                ? "cursor-not-allowed bg-[#CECECE]"
+                : "bg-blue-primary"
             }`}
           >
-            <ChevronLeft className="w-7 h-7" />
+            <img
+              src={`${
+                currentIndex === 0
+                  ? "/assets/images/vecteurs/arrow-left.svg"
+                  : "/assets/images/vecteurs/arrow-left-white.svg"
+              }`}
+              alt="arrow"
+              className="w-10 mx-auto"
+            />
           </button>
 
           <button
             onClick={handleNext}
             disabled={currentIndex >= comments.length - visibleCards}
-            className={`flex items-center justify-center h-16 w-16 rounded-full shadow-md border ${
+            className={`hidden md:block h-16 w-16 rounded-full ${
               currentIndex >= comments.length - visibleCards
-                ? " bg-[#E5E5E5] text-black" // Inactif
-                : "bg-blue text-white" // Actif
+                ? "bg-[#CECECE] cursor-not-allowed"
+                : "bg-blue-primary"
             }`}
           >
-            <ChevronRight className="w-7 h-7" />
+            <img
+              src={`${
+                currentIndex >= comments.length - visibleCards
+                  ? "/assets/images/vecteurs/arrow-right.svg"
+                  : "/assets/images/vecteurs/arrow-right-white.svg"
+              }`}
+              alt="arrow"
+              className="w-10 mx-auto"
+            />
           </button>
         </div>
       </div>
 
       {/* Carrousel */}
-      <div className="flex overflow-hidden border border-red-600" >
+      <div className="overflow-hidden">
         <div
-          className="flex transition-transform duration-300 gap-3 border-4 border-green-600"
+          className="flex transition-transform duration-300"
           style={{
             transform: `translateX(-${currentIndex * (100 / visibleCards)}%)`,
           }}
@@ -150,15 +177,15 @@ export default function TestimonialCarousel() {
           {comments.map((comment, index) => (
             <div
               key={comment.id}
-              className={`flex-shrink-0 p-4 py-14 rounded-lg text-center ${
+              className={`flex-shrink-0 p-4 py-10 rounded-lg mx-2 text-center ${
                 colors[index % colors.length]
-              } ${textColors[index % textColors.length]}`}
+              }   ${textColors[index % textColors.length]} `}
               style={{
-                width: visibleCards === 1 ? "100%" : `${95 / visibleCards}%`, // Prend 100% sur mobile
+                width: `${95 / visibleCards}%`,
               }}
             >
               <h1 className="mb-4 font-bold text-xl">{comment.auteur}</h1>
-              <p className="font-medium">{comment.text}</p>
+              <p className="font-medium ">{comment.text}</p>
             </div>
           ))}
         </div>
@@ -177,4 +204,6 @@ export default function TestimonialCarousel() {
       </div>
     </div>
   );
-}
+};
+
+

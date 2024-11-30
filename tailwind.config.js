@@ -8,11 +8,12 @@ module.exports = {
         "dark-blue": "#4652AC",
         orange: "#F87501",
       },
+      screens: {
+        mm: "300px",
+        lm: "918px",
+      },
     },
-    screens: {
-      mm: "300px",
-      lm: "918px",
-    },
+   
   },
   plugins: [],
 };
