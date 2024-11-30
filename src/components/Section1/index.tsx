@@ -22,7 +22,7 @@ function Section1() {
 
         <div className="mt-5 lg:mt-10 gap-10 flex max-md:justify-between md:gap-10">
           <Link
-            to=""
+            to="demo"
             className="flex px-8 gap-1 place-items-center md:gap-4 rounded-xl transition-all duration-300 ease-in-out py-3 hover:bg-dark-blue   bg-blue"
           >
             <p className="max-md:text-xs">View Demo</p>
