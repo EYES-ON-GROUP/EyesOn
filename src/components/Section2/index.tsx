@@ -1,11 +1,12 @@
 import React from "react";
 import TryNow from "../TryNow";
+import { Link } from "react-router-dom";
 
 function Section2() {
   // bg-[position:-5%_37%] bg-[length:160%]
   return (
     <section className="py-20 px-8">
-      <h1 className="text-blue text-center text-xl">
+      <h1 className="text-blue lg:text-5xl text-center text-xl">
         CONTRÔLE PARENTAL{" "}
         <span className="font-semibold">
           eyes <span className="text-orange">ON</span>
@@ -96,9 +97,13 @@ function Section2() {
             Personnalisez ainsi l’expérience numérique de vos enfants en
             fonction de leurs besoins et de vos préférences
           </p>
-          <button className="bg-[#4652AC] rounded-[18px] text-center text-white w-[94px] h-[32px] ">
-            View Demo
-          </button>
+          <Link
+            to="demo"
+            className="flex w-fit px-8 gap-1 place-items-center md:gap-4 rounded-xl transition-all duration-300 ease-in-out py-3 hover:bg-dark-blue   bg-blue"
+          >
+            <p className="max-md:text-xs">View Demo</p>
+            <img src="/assets/images/vision.png" alt="" className="" />
+          </Link>
         </div>
       </div>
 
