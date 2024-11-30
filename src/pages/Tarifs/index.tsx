@@ -1,29 +1,9 @@
-import React from "react";
-import Card from "../../components/Card/Card";
-import Header from "../../components/Header";
-import Section1 from "../../components/Section1";
-import { Link, NavLink } from "react-router-dom";
-interface Feature {
-  text: string;
-  imgSrc: string;
-}
-
-interface CardData {
-  title: string;
-  description: string;
-  price: string;
-  monthlyPrice: string;
-  features: Feature[];
-  imgSrc: string;
-  color: string;
-  textColor:string;
-}
+import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 
-interface CardListProps {
-  data: CardData[];
-}
-const CardList: React.FC<CardListProps> = ({ data }) => {
+
+const Planstarifs = () => { 
   return(
 <section className='min-h-[10vh]'>
  <div className='w-full h-64 rounded-br-3xl'>
@@ -56,14 +36,9 @@ const CardList: React.FC<CardListProps> = ({ data }) => {
     Choose the good plan for your family
   </p>
 </div>
- 
-      <div className="flex flex-wrap justify-center items-center sm:mx-2 ">
-      {data.map((card, index) => (
-        <Card key={index} {...card} />
-      ))}
-    </div>
+
 </section>
 )
 }
 
-export default CardList
+export default Planstarifs
