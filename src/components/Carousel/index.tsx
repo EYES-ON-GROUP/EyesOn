@@ -2,6 +2,7 @@ import * as React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 interface Slide {
   id: number;
+  img:string;
   title: string;
   content: string;
   backgroundColor: string;
@@ -14,36 +15,42 @@ export default function TestimonialCarousel() {
   const slides: Slide[] = [
     {
       id: 1,
+      img:"/assets/images/image_N9SJ4qVP_1722070696756_raw.jpg",
       title: "Jean Dupont",
       content: "Eyes On m'a permis de protéger mes enfants tout en leur donnant une certaine autonomie en ligne. Une application indispensable !",
       backgroundColor: "bg-blue", // Blue
     },
     {
       id: 2,
+      img:"/assets/images/istockphoto-1354524757-612x612.jpg",
       title: "Marie Curie",
       content: "Enfin un outil facile à utiliser pour surveiller les activités numériques de mes enfants. Je me sens plus serein(e)",
       backgroundColor: "bg-black", // Green
     },
     {
       id: 3,
+      img:"/assets/images/5253741.jpg",
       title: "Albert Einstein",
       content:"Grâce à Eyes On, j'ai pu fixer des limites de temps d'écran et m'assurer que mes enfants utilisent leur temps en ligne de manière constructive.",
       backgroundColor: "bg-[#1e4d91]", // Black
     },
     {
       id: 4,
+      img:"/assets/images/istockphoto-1354524757-612x612-removebg-preview.png",
       title: "John doe",
       content: "Le rapport d'activité hebdomadaire est une fonctionnalité géniale pour comprendre les habitudes numériques de ma famille",
       backgroundColor: "bg-black", // Blue
     },
     {
       id: 5,
+      img:"/assets/images/istockphoto-1354524757-612x612-removebg-preview.png",
       title: "Michelle Curie",
       content: "J'adore la possibilité de bloquer certains sites et d'autoriser uniquement les contenus adaptés à l'âge de mes enfants.",
       backgroundColor: "bg-blue", // Green
     },
     {
       id: 6,
+      img:"/assets/images/istockphoto-1354524757-612x612-removebg-preview.png",
       title: "Albert johnathan",
       content:"Depuis que j'utilise Eyes On, mes enfants respectent mieux les règles du temps d'écran. C'est un vrai soulagement",
       backgroundColor: "bg-black", // Black
@@ -82,7 +89,7 @@ export default function TestimonialCarousel() {
           </h2>
 
           <h2 className="text-center lg:hidden lg:text-left  text-[2rem] font-bold leading-tight text-[#1e4d91] font-raleway">
-          {"tototo"}
+          Que disent les parents de l'application EyesOn
           </h2>
 
 
@@ -127,6 +134,7 @@ export default function TestimonialCarousel() {
                       maxHeight: "18rem",
                     }}
                   >
+                    <img src={slide.img} alt="" className="h-32 w-32 rounded-full object-cover" />
                     <h3 className="mb-3 text-lg font-semibold text-center font-raleway">{slide.title}</h3>
                     <p className="text-base text-center font-raleway">{slide.content}</p>
                   </div>
