@@ -11,6 +11,7 @@ const Home = () => {
     <main>
      <Section1 />
      <Section2 />
+     
      <Carousel />
       {/* Other content can go here */}
     </main>
