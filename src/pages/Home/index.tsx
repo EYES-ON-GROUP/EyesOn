@@ -3,15 +3,16 @@ import React from "react";
 import Section1 from "../../components/Section1";
 import Section2 from "../../components/Section2";
 import Carousel from "../../components/Carousel";
-
-
+import GlobalSection from "../../components/GlobalSection";
 
 const Home = () => {
   return (
     <main>
-     <Section1 />
-     <Section2 />
-     <Carousel />
+      <GlobalSection>
+        <Section1 />
+        <Section2 />
+      </GlobalSection>
+      <Carousel />
       {/* Other content can go here */}
     </main>
   );
