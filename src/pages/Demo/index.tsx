@@ -108,7 +108,7 @@ const Demo = () => {
             <div className='flex justify-between gap-5 place-items-center'>
               <div>
                 <span className='py-0.5 px-3  mr-1 rounded-full bg-gray-800'></span>
-                <span>Social Media</span>
+                <span>Games</span>
               </div>
               <div>
                 <p  className='font-semibold'>3h25min</p>
@@ -118,7 +118,7 @@ const Demo = () => {
             <div className='flex justify-between gap-5 place-items-center'>
               <div>
                 <span className='py-0.5 px-3  mr-1 rounded-full bg-gray-400'></span>
-                <span>Social Media</span>
+                <span>Videos</span>
               </div>
               <div>
                 <p  className='font-semibold'>3h25min</p>

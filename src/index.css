@@ -4,7 +4,8 @@
 
 /* Add the heartbeat animation */
 @keyframes heartbeat {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -21,4 +22,22 @@
 /* New glow effect for links */
 .glow {
   text-shadow: 0 0 5px rgba(52, 74, 244, 0.7), 0 0 10px rgba(52, 74, 244, 0.7); /* Blue glow */
+}
+
+/* Add the background movement animation */
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+/* Apply the background movement animation to the GlobalSection */
+.bg-moving {
+  animation: backgroundMove 10s linear infinite; /* Adjust duration as needed */
+  background-image: url('../public/assets/images/background.png'); /* Set the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-size: cover; /* Ensure the background covers the entire div */
 }
