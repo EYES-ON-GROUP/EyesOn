@@ -6,7 +6,7 @@ interface GlobalSectionProps {
 
 const GlobalSection: React.FC<GlobalSectionProps> = ({ children }) => {
   return (
-    <div className="h-[350vh] mm:max-lm:h-[540vh] md:h-[375vh] min-h-screen bg-[url('../public/assets/images/background.png')] bg-no-repeat bg-cover ">
+    <div className="h-auto pb-10 mb-20 bg-[url('../public/assets/images/background.png')] bg-no-repeat bg-cover bg-moving">
       {children}
     </div>
   );
