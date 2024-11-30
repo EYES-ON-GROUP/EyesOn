@@ -34,21 +34,7 @@ const CardList: React.FC<CardListProps> = ({ data }) => {
 
   <div className='w-[90%] flex justify-between mx-auto  left-12 px-4 absolute top-4'>
     {/* icon-shutdown  */}
-    <img src="/assets/images/icons8-shutdown-48.png" alt="icon" />
-    {/* les liens  */}
 
-    <div className='flex gap-10 max-md:hidden place-items-center'>
-      <nav className='flex gap-4 text-white'>
-        <NavLink to="/home" className=''>Home</NavLink>
-        <NavLink to="/" className='text-orange'>Plans&Tarifs</NavLink>
-        <NavLink to="/demo" className=''>Demo</NavLink>
-      </nav>
-
-      <Link to='' className='flex gap-2 px-5 py-3 font-semibold text-white transition-all duration-300 ease-in-out group rounded-tl-xl rounded-br-xl hover:bg-dark-blue bg-blue'>
-        <p>Buy Now</p>
-        <img src="/assets/images/shopping-cart (2).png" alt="" className='transition-transform duration-300 ease-in-out group-hover:translate-x-1' />
-      </Link>
-    </div>
   </div>
 
   <div className="absolute flex items-center justify-center w-[90%] md:w-[85%] h-10 px-4 md:px-24 bg-gray-300 left-1/2 transform -translate-x-1/2 top-44 rounded-md">
