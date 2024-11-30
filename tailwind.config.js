@@ -11,11 +11,10 @@ module.exports = {
         "bg-blue": "#F87501",
       },
       screens: {
-        mm: "300px",
+        mm: "200px",
         lm: "918px",
-      },  
+      },
     },
-    
   },
   plugins: [],
 };
