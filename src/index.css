@@ -17,3 +17,8 @@
   animation: heartbeat 1.5s infinite;
   box-shadow: 0 0 10px rgba(255, 165, 0, 0.7); /* Orange glow */
 }
+
+/* New glow effect for links */
+.glow {
+  text-shadow: 0 0 5px rgba(52, 74, 244, 0.7), 0 0 10px rgba(52, 74, 244, 0.7); /* Blue glow */
+}
