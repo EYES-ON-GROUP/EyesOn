@@ -6,7 +6,9 @@ function LiveView() {
       <div>
         <h1 className="text-blue text-center lg:text-2xl  md:text-left mb-10 text-xl">
           <span className="font-semibold">
-            <span className="text-orange font-bold md:text-5xl text-2xl">LiveView </span>
+            <span className="text-orange font-bold md:text-5xl text-2xl">
+              LiveView{" "}
+            </span>
             <br />
             Vos Yeux sur Leur Monde, en Temps Réel !
           </span>
@@ -25,7 +27,7 @@ function LiveView() {
       </div>
 
       <div className="h-[500px]  mx-auto w-[90%]">
-        <video autoPlay controls className="h-full w-full">
+        <video autoPlay controls muted className="h-full w-full">
           <source src="/assets/videos/enr.mp4" type="video/mp4" />
         </video>
       </div>

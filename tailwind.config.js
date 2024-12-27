@@ -14,6 +14,9 @@ module.exports = {
         mm: "200px",
         lm: "918px",
       },
+      fontFamily: {
+        'dancing': ['"Dancing Script"', 'cursive'],
+      },
     },
   },
   plugins: [],

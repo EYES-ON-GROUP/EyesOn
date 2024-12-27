@@ -15,7 +15,7 @@ function Section1() {
       </video>
 
       <div className="z-40 absolute top-1/2 left-0 md:left-32 py-10 px-5 lg-px-0 md:rounded-3xl md:w-[70%] lg:w-[35%]  bg-white bg-opacity-20  text-white -translate-y-1/2">
-        <p className="text-4xl  font-semibold">
+        <p className="text-4xl font-dancing font-semibold">
           La solution de <span className="text-orange">contrôle parental</span>{" "}
           et bien-être numérique optimale
         </p>

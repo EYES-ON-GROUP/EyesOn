@@ -41,3 +41,40 @@
   background-repeat: no-repeat; /* Prevent the background from repeating */
   background-size: cover; /* Ensure the background covers the entire div */
 }
+
+/* Add this to your CSS file */
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('../public/assets/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 700; /* Adjust based on the weights you want to support */
+  font-style: normal;
+}
+
+/* For static fonts, you can add them as well */
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('../public/assets/fonts/static/DancingScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('../public/assets/fonts/static/DancingScript-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('../public/assets/fonts/static/DancingScript-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('../public/assets/fonts/static/DancingScript-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

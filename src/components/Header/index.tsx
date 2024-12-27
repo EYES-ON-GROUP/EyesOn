@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { NavMobile } from "../Navmobile.tsx";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +22,7 @@ const Header = () => {
         isScrolled ? "bg-white" : "bg-transparent"
       }`}
     >
-      <div id="largerHeader" className="w-[90%] flex justify-between mx-auto">
+      <div id="largerHeader" className="  w-[90%] flex justify-between mx-auto">
         <img
           src="/assets/images/ON.png"
           alt="logo"
@@ -62,7 +63,13 @@ const Header = () => {
             />
           </Link>
         </div>
+
+        <div className="md:hidden">
+        <NavMobile />
       </div>
+      </div>
+
+      
     </header>
   );
 };
